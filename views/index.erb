@@ -1,0 +1,11 @@
+<form action="/" method="post">
+  <input type="text" placeholder="Bird Name" name="bird">
+  <input type="text" placeholder="Bird Color" name="color">
+  <input type="submit" value="Add">
+</form>
+
+<ul>
+  <% birdies.each do |bird| %>
+    <li><%= bird[:name] %> | <%= bird[:color] %></li>
+    <% end %>
+</ul>
